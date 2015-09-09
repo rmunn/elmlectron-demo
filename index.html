@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+    <script type="text/javascript" src="elm.js"></script>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    We are using io.js <script>document.write(process.version)</script>
+    and Electron <script>document.write(process.versions['electron'])</script>.
+    <div id="elm">Elm code will take over this div</div>
+  </body>
+  <script type="text/javascript">
+    var elmDiv = document.getElementById("elm");
+    Elm.embed(Elm.Main, elmDiv);
+  </script>
+</html>
